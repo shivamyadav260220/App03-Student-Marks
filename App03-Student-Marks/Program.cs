@@ -25,6 +25,8 @@ namespace MarksConsoleApp
                 Console.WriteLine("5) Quit");
 
                 Console.Write("\n Enter your choice: ");
+
+                //Call the required function depending upon the options selected by the User
                 if (int.TryParse(Console.ReadLine(), out choice))
                 {
                     switch (choice)
@@ -57,8 +59,14 @@ namespace MarksConsoleApp
             } while (choice != 5);
         }
 
+        //This function get the count of student falling in each category
         private static void OutputGradeProfileDistribution()
         {
+            Console.WriteLine("Grade 1: First Class");
+            Console.WriteLine("Grade 2: Upper Second Class");
+            Console.WriteLine("Grade 3: Lower Second Class");
+            Console.WriteLine("Grade 4: Third Class");
+            Console.WriteLine("Grade 5: Fail");
             if (marks[0] == 0)
             {
                 Console.WriteLine("Please enter marks first.");
@@ -79,6 +87,7 @@ namespace MarksConsoleApp
             }
         }
 
+        //This function helps in distributing the grades depending upon the marks slab
         static int GetGradeIndex(int grade)
         {
             switch (grade)
@@ -121,6 +130,7 @@ namespace MarksConsoleApp
                 }
             }
 
+        //This method helps in displaying the statistics for the marks entered which include the mean, median, maximum and the minimums
         private static void OutputStats()
         {
             if (count > 0)
