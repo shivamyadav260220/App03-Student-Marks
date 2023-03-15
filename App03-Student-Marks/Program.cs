@@ -59,7 +59,41 @@ namespace MarksConsoleApp
 
         private static void OutputGradeProfileDistribution()
         {
-            throw new NotImplementedException();
+            if (marks[0] == 0)
+            {
+                Console.WriteLine("Please enter marks first.");
+                return;
+            }
+
+            int[] gradeCounts = new int[5];
+            foreach (int mark in marks)
+            {
+                int gradeIndex = GetGradeIndex(mark);
+                gradeCounts[gradeIndex]++;
+            }
+
+            Console.WriteLine("Grade Profile:");
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"Grade {i + 1}: {gradeCounts[i]}");
+            }
+        }
+
+        static int GetGradeIndex(int grade)
+        {
+            switch (grade)
+            {
+                case var g when g >= 70 && g <= 100:
+                    return 0;
+                case var g when g >= 60 && g <= 69:
+                    return 1;
+                case var g when g >= 50 && g <= 59:
+                    return 2;
+                case var g when g >= 40 && g <= 49:
+                    return 3;
+                default:
+                    return 4;
+            }
         }
 
         private static string OutputGradeProfile(int mark)
@@ -145,14 +179,6 @@ namespace MarksConsoleApp
             {
                 Console.WriteLine($"{i + 1}\t{marks[i]:F2}\t{OutputGradeProfile(marks[i])}");
 
-            }
-
-            //This function is to calcualate stats which incoporates mean, median, maximum and minimum for the marks of 10 students
-            static void OutputStats()
-            {
-
-
-               
             }
         }
     }
