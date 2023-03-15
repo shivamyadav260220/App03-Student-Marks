@@ -1,0 +1,15 @@
+C:\Users\Sumit Mehta\source\repos\App03-Student-Marks\App03-Student-Marks\bin\Debug\net6.0\App03-Student-Marks.exe
+C:\Users\Sumit Mehta\source\repos\App03-Student-Marks\App03-Student-Marks\bin\Debug\net6.0\App03-Student-Marks.deps.json
+C:\Users\Sumit Mehta\source\repos\App03-Student-Marks\App03-Student-Marks\bin\Debug\net6.0\App03-Student-Marks.runtimeconfig.json
+C:\Users\Sumit Mehta\source\repos\App03-Student-Marks\App03-Student-Marks\bin\Debug\net6.0\App03-Student-Marks.dll
+C:\Users\Sumit Mehta\source\repos\App03-Student-Marks\App03-Student-Marks\bin\Debug\net6.0\App03-Student-Marks.pdb
+C:\Users\Sumit Mehta\source\repos\App03-Student-Marks\App03-Student-Marks\obj\Debug\net6.0\App03-Student-Marks.csproj.AssemblyReference.cache
+C:\Users\Sumit Mehta\source\repos\App03-Student-Marks\App03-Student-Marks\obj\Debug\net6.0\App03-Student-Marks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sumit Mehta\source\repos\App03-Student-Marks\App03-Student-Marks\obj\Debug\net6.0\App03-Student-Marks.AssemblyInfoInputs.cache
+C:\Users\Sumit Mehta\source\repos\App03-Student-Marks\App03-Student-Marks\obj\Debug\net6.0\App03-Student-Marks.AssemblyInfo.cs
+C:\Users\Sumit Mehta\source\repos\App03-Student-Marks\App03-Student-Marks\obj\Debug\net6.0\App03-Student-Marks.csproj.CoreCompileInputs.cache
+C:\Users\Sumit Mehta\source\repos\App03-Student-Marks\App03-Student-Marks\obj\Debug\net6.0\App03-Student-Marks.dll
+C:\Users\Sumit Mehta\source\repos\App03-Student-Marks\App03-Student-Marks\obj\Debug\net6.0\refint\App03-Student-Marks.dll
+C:\Users\Sumit Mehta\source\repos\App03-Student-Marks\App03-Student-Marks\obj\Debug\net6.0\App03-Student-Marks.pdb
+C:\Users\Sumit Mehta\source\repos\App03-Student-Marks\App03-Student-Marks\obj\Debug\net6.0\App03-Student-Marks.genruntimeconfig.cache
+C:\Users\Sumit Mehta\source\repos\App03-Student-Marks\App03-Student-Marks\obj\Debug\net6.0\ref\App03-Student-Marks.dll

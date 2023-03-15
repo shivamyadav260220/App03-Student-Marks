@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "App03-Student-Marks/1.0.0": {
+        "runtime": {
+          "App03-Student-Marks.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "App03-Student-Marks/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

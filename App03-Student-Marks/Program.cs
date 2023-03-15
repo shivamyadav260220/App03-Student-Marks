@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 
 namespace MarksConsoleApp
 {
@@ -10,8 +11,12 @@ namespace MarksConsoleApp
         static void Main(string[] args)
         {
             int choice = 0;
+            Console.WriteLine("--------------------------------------------------------------------------");
+            Console.WriteLine("\t\t\t App03 Student Marks");
+            Console.WriteLine("\t\t\t Developed By Shivam Yadav");
+            Console.WriteLine("--------------------------------------------------------------------------");
             do
-            {   
+            {   //Provide a menu to the user to select.
                 Console.WriteLine("Menu:");
                 Console.WriteLine("1) Input Mark");
                 Console.WriteLine("2) Output Marks");
@@ -19,7 +24,7 @@ namespace MarksConsoleApp
                 Console.WriteLine("4) Output Grade Profile");
                 Console.WriteLine("5) Quit");
 
-                Console.Write("Enter your choice: ");
+                Console.Write("\n Enter your choice: ");
                 if (int.TryParse(Console.ReadLine(), out choice))
                 {
                     switch (choice)
@@ -37,7 +42,7 @@ namespace MarksConsoleApp
                             OutputGradeProfile();
                             break;
                         case 5:
-                            Console.WriteLine("Quitting program...");
+                            Console.WriteLine("You are Quitting from the application");
                             break;
                         default:
                             Console.WriteLine("Invalid choice. Please try again.");
@@ -51,7 +56,7 @@ namespace MarksConsoleApp
 
             } while (choice != 5);
         }
-
+        //This function is to ask user to enter marks for a single subject for 10 students
         static void InputMarks()
         {
             Console.WriteLine("Enter marks for 10 students:");
@@ -70,7 +75,7 @@ namespace MarksConsoleApp
                 }
             }
         }
-
+        //This function is to display the marks for all the 10 students
         static void OutputMarks()
         {
             Console.WriteLine("Student marks:");
@@ -80,6 +85,7 @@ namespace MarksConsoleApp
             }
         }
 
+        //This function is to calcualate stats which incoporates mean, median, maximum and minimum for the marks of 10 students
         static void OutputStats()
         {
             if (count > 0)
@@ -106,6 +112,7 @@ namespace MarksConsoleApp
             }
         }
 
+        //The below function is to divide the students into various grades category
         static void OutputGradeProfile()
         {
             if (count > 0)
@@ -113,19 +120,19 @@ namespace MarksConsoleApp
                 int[] grades = new int[5];
                 foreach (int mark in marks)
                 {
-                    if (mark >= 90)
+                    if (mark >= 70 && mark <= 100)
                     {
                         grades[0]++;
                     }
-                    else if (mark >= 80)
+                    else if (mark >= 60 && mark <= 69)
                     {
                         grades[1]++;
                     }
-                    else if (mark >= 70)
+                    else if (mark >= 50 && mark <= 59)
                     {
                         grades[2]++;
                     }
-                    else if (mark >= 60)
+                    else if (mark >= 40 && mark <= 49)
                     {
                         grades[3]++;
                     }
@@ -136,11 +143,11 @@ namespace MarksConsoleApp
                 }
 
                 Console.WriteLine("Grade Profile:");
-                Console.WriteLine($"A: {grades[0]}");
-                Console.WriteLine($"B: {grades[1]}");
-                Console.WriteLine($"C: {grades[2]}");
-                Console.WriteLine($"D: {grades[3]}");
-                Console.WriteLine($"F: {grades[4]}");
+                Console.WriteLine($"First Class: {grades[0]}");
+                Console.WriteLine($"Upper Second Class: {grades[1]}");
+                Console.WriteLine($"Lower Second Class: {grades[2]}");
+                Console.WriteLine($"Third Class: {grades[3]}");
+                Console.WriteLine($"Fail: {grades[4]}");
             }
             else
             {
