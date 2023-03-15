@@ -157,7 +157,7 @@ namespace MarksConsoleApp
             }
         }
         //This function is to ask user to enter marks for a single subject for 10 students
-        static void InputMarks()
+        public static void InputMarks()
         {
             Console.WriteLine("Enter marks for 10 students:");
             for (int i = 0; i < 10; i++)

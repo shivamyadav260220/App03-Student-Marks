@@ -23,6 +23,7 @@ namespace MyProject.Tests
             Assert.AreEqual(Program.OutputGradeProfile(marks[8]), "F");
             Assert.AreEqual(Program.OutputGradeProfile(marks[9]), "F");
         }
+
     }
 }
 
