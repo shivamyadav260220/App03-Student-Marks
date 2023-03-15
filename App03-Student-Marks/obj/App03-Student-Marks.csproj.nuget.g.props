@@ -13,4 +13,7 @@
     <SourceRoot Include="C:\Users\Sumit Mehta\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_TestPlatform Condition=" '$(PkgMicrosoft_TestPlatform)' == '' ">C:\Users\Sumit Mehta\.nuget\packages\microsoft.testplatform\17.5.0</PkgMicrosoft_TestPlatform>
+  </PropertyGroup>
 </Project>
