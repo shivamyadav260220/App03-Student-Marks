@@ -39,7 +39,7 @@ namespace MarksConsoleApp
                             OutputStats();
                             break;
                         case 4:
-                            OutputGradeProfile();
+                            OutputGradeProfileDistribution();
                             break;
                         case 5:
                             Console.WriteLine("You are Quitting from the application");
@@ -56,37 +56,38 @@ namespace MarksConsoleApp
 
             } while (choice != 5);
         }
-        //This function is to ask user to enter marks for a single subject for 10 students
-        static void InputMarks()
+
+        private static void OutputGradeProfileDistribution()
         {
-            Console.WriteLine("Enter marks for 10 students:");
-            for (int i = 0; i < 10; i++)
-            {
-                Console.Write($"Enter mark for student {i + 1}: ");
-                if (int.TryParse(Console.ReadLine(), out int mark))
+            throw new NotImplementedException();
+        }
+
+        private static string OutputGradeProfile(int mark)
+        {
+            //The below function is to divide the students into various grades category
+                if (mark >= 70 && mark <= 100)
                 {
-                    marks[i] = mark;
-                    count++;
+                    return "A";
+                }
+                else if (mark >= 60 && mark <= 69)
+                {
+                    return "B";
+                }
+                else if (mark >= 50 && mark <= 59)
+                {
+                    return "C";
+                }
+                else if (mark >= 40 && mark <= 49)
+                {
+                    return "D";
                 }
                 else
                 {
-                    Console.WriteLine("Invalid input. Please try again.");
-                    i--;
+                    return "F";
                 }
             }
-        }
-        //This function is to display the marks for all the 10 students
-        static void OutputMarks()
-        {
-            Console.WriteLine("Student marks:");
-            for (int i = 0; i < count; i++)
-            {
-                Console.WriteLine($"Student {i + 1}: {marks[i]}");
-            }
-        }
 
-        //This function is to calcualate stats which incoporates mean, median, maximum and minimum for the marks of 10 students
-        static void OutputStats()
+        private static void OutputStats()
         {
             if (count > 0)
             {
@@ -111,47 +112,47 @@ namespace MarksConsoleApp
                 Console.WriteLine("No marks entered yet.");
             }
         }
-
-        //The below function is to divide the students into various grades category
-        static void OutputGradeProfile()
+        //This function is to ask user to enter marks for a single subject for 10 students
+        static void InputMarks()
         {
-            if (count > 0)
+            Console.WriteLine("Enter marks for 10 students:");
+            for (int i = 0; i < 10; i++)
             {
-                int[] grades = new int[5];
-                foreach (int mark in marks)
+                Console.Write($"Enter mark for student {i + 1}: ");
+                if (int.TryParse(Console.ReadLine(), out int mark))
                 {
-                    if (mark >= 70 && mark <= 100)
-                    {
-                        grades[0]++;
-                    }
-                    else if (mark >= 60 && mark <= 69)
-                    {
-                        grades[1]++;
-                    }
-                    else if (mark >= 50 && mark <= 59)
-                    {
-                        grades[2]++;
-                    }
-                    else if (mark >= 40 && mark <= 49)
-                    {
-                        grades[3]++;
-                    }
-                    else
-                    {
-                        grades[4]++;
-                    }
+                    marks[i] = mark;
+                    count++;
                 }
-
-                Console.WriteLine("Grade Profile:");
-                Console.WriteLine($"First Class: {grades[0]}");
-                Console.WriteLine($"Upper Second Class: {grades[1]}");
-                Console.WriteLine($"Lower Second Class: {grades[2]}");
-                Console.WriteLine($"Third Class: {grades[3]}");
-                Console.WriteLine($"Fail: {grades[4]}");
+                else
+                {
+                    Console.WriteLine("Invalid input. Please try again.");
+                    i--;
+                }
             }
-            else
+        }
+        //This function is to display the marks for all the 10 students
+        public static void OutputMarks()
+        {
+            if (marks.Length == 0)
             {
-                Console.WriteLine("No marks entered yet.");
+                Console.WriteLine("No marks input yet.");
+                return;
+            }
+            Console.WriteLine("Student\tMark\tGrade");
+            Console.WriteLine("------\t----\t-----");
+            for (int i = 0; i < marks.Length; i++)
+            {
+                Console.WriteLine($"{i + 1}\t{marks[i]:F2}\t{OutputGradeProfile(marks[i])}");
+
+            }
+
+            //This function is to calcualate stats which incoporates mean, median, maximum and minimum for the marks of 10 students
+            static void OutputStats()
+            {
+
+
+               
             }
         }
     }
