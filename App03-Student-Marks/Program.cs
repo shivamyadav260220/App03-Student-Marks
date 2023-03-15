@@ -105,7 +105,7 @@ namespace MarksConsoleApp
             }
         }
 
-        private static string OutputGradeProfile(int mark)
+        public static string OutputGradeProfile(int mark)
         {
             //The below function is to divide the students into various grades category
                 if (mark >= 70 && mark <= 100)

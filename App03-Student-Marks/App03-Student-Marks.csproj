@@ -11,6 +11,9 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.QualityTools.Testing.Fakes" Version="16.11.230815" />
     <PackageReference Include="Microsoft.TestPlatform" Version="17.5.0" />
+    <PackageReference Include="Microsoft.VisualStudio.UnitTesting" Version="11.0.50727.1" />
+    <PackageReference Include="TestToolsToXunitProxy" Version="0.0.4" />
+    <PackageReference Include="Unofficial.Microsoft.VisualStudio.QualityTools.UnitTestFramework" Version="10.0.0" />
   </ItemGroup>
 
 </Project>
