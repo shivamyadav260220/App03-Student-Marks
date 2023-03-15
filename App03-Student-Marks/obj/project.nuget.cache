@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "G/tImjZ3lOamowcZTHz7gC9coY3GXGiivfo2uUR44g9O0QsGDXlFWOXHzBBwiro79EFGhUFr0QgL9SK50Go3Cg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sumit Mehta\\source\\repos\\App03-Student-Marks\\App03-Student-Marks\\App03-Student-Marks.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sumit Mehta\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.15\\microsoft.windowsdesktop.app.ref.6.0.15.nupkg.sha512",
+    "C:\\Users\\Sumit Mehta\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.15\\microsoft.netcore.app.ref.6.0.15.nupkg.sha512",
+    "C:\\Users\\Sumit Mehta\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.15\\microsoft.aspnetcore.app.ref.6.0.15.nupkg.sha512",
+    "C:\\Users\\Sumit Mehta\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.15\\microsoft.netcore.app.host.win-x64.6.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}
